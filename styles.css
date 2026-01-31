@@ -1,0 +1,153 @@
+body {
+  font-family: "Courier New", Courier, sans-serif;
+  background-color: antiquewhite;
+  margin: 1em;
+}
+
+div {
+  padding: 1em;
+  max-width: 75%;
+  margin: auto;
+}
+
+.main div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timetext {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  user-select: none;
+  height: auto;
+  flex-wrap: wrap;
+}
+.timetext h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+}
+.message {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  font-size: 2em;
+}
+
+.clock {
+  width: 400px;
+  height: 400px;
+  margin: 1em auto 1em auto;
+  padding: 0;
+}
+
+.minutemarkers {
+  stroke: gray;
+  stroke-width: 3;
+  stroke-dasharray: 0.2 0.8;
+  stroke-dashoffset: 0.1;
+  fill: transparent;
+}
+
+.hourmarkers {
+  stroke: red;
+  stroke-width: 16;
+  stroke-dasharray: 0.2 4.8;
+  stroke-dashoffset: 0.1;
+  fill: transparent;
+}
+
+.minutehand {
+  stroke: rgb(3, 203, 9);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.hourhand {
+  stroke: rgb(3, 203, 9);
+  stroke-width: 14;
+  stroke-linecap: round;
+}
+.testhand {
+  stroke: rgb(55, 29, 21);
+}
+.incorrectanswer {
+  stroke: rgb(255, 0, 0);
+}
+.handhover {
+  stroke: rgb(168, 98, 76);
+}
+.handselected {
+  stroke: rgb(216, 83, 42);
+}
+.clocktext {
+  fill: rgb(55, 29, 21);
+  text-anchor: middle;
+  cursor: default;
+  user-select: none;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.clocktext#minutetext {
+  fill: rgb(55, 29, 21);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.buttons button {
+  user-select: none;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4em;
+  padding: 15px 32px;
+  border-radius: 3%;
+  border: 1px solid gray;
+}
+
+button#buttoncheck {
+  background-color: #04aa6d;
+  margin-left: 0.5em;
+}
+.buttons button#buttonreset {
+  background-color: #008cba;
+}
+button#buttoncheck:hover,
+button#buttonreset:hover {
+  opacity: 90%;
+}
+button#buttoncheck:active,
+button#buttonreset:active {
+  opacity: 120;
+}
+
+.hidden {
+  display: none;
+}
+
+.showdigits {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  padding-top: 5px;
+  height: auto;
+  cursor: pointer;
+  font-size: 1.2em;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.showdigits input {
+  margin: 0;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+}
+.showdigits label {
+  margin: auto 1em auto 1em;
+  padding: 0;
+  font-size: 1.1em;
+}
